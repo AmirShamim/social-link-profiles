@@ -1,0 +1,93 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --green: hsl(75, 94%, 57%);
+
+  --white: hsl(0, 0%, 100%);
+
+  --grey-700: hsl(0, 0%, 20%);
+  --grey-800: hsl(0, 0%, 12%);
+  --grey-900: hsl(0, 0%, 8%);
+}
+
+.green-text {
+  color: var(--green);
+}
+.text-small {
+  font-size: 13px;
+}
+.font-lowbold {
+  font-weight: 600;
+}
+.font-semibold {
+  font-weight: 700;
+}
+
+.flex {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.flex.gap-min {
+  gap: 0.55rem;
+}
+.margin-min {
+  margin: 0.2rem;
+}
+
+body {
+  background-color: var(--grey-900);
+  font-family: "Inter";
+}
+.container {
+  text-align: center;
+  height: 100vh;
+}
+.social-media-profile-card {
+  padding: 0.5rem;
+  background-color: var(--grey-800);
+  border-radius: 8px;
+  color: white;
+  height: 490px;
+}
+
+.avatar-image {
+  width: 100px;
+  border-radius: 50%;
+}
+
+ul li {
+  width: 230px;
+  list-style: none;
+}
+
+.social-links {
+  text-decoration: none;
+  color: var(--white);
+  width: 90%;
+  background-color: var(--grey-700);
+  padding: 0.5rem 0;
+  border-radius: 8px;
+  display: block;
+  margin: 0 auto;
+  transition: .3s all ease-in;
+}
+.social-links:hover{
+    background-color: var(--green);
+    color: var(--grey-900);
+}
+
+@media only screen and (min-width: 600px) {
+  .container {
+    padding: 1rem;
+  }
+  ul li {
+    width: 290px;
+  }
+}
